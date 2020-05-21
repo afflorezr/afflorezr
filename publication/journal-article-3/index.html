@@ -43,6 +43,9 @@
 
   
   
+  
+  <script src="/js/mathjax-config.js"></script>
+  
 
   
   
@@ -173,9 +176,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -191,7 +194,7 @@
   
   
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arapey:400,400i%7CKarla:400,700%7CRoboto+Mono&display=swap">
   
 
   
@@ -205,6 +208,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-27811677-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-27811677-3', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -214,8 +255,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu2ec7a1f4f93b50b4fa452907fc8e9ad8_30297_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu2ec7a1f4f93b50b4fa452907fc8e9ad8_30297_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="/publication/journal-article-3/">
 
@@ -238,8 +279,8 @@
   <meta property="og:site_name" content="">
   <meta property="og:url" content="/publication/journal-article-3/">
   <meta property="og:title" content="Comportamiento de Variables Químicas en un Sistema de Cultivo sin Suelo para Clavel en la Sabana de Bogotá. | ">
-  <meta property="og:description" content="To optimize the management of fertigation in the soilless crops is essential to know the activity of chemical variables of the solution, and of the substrates. The aim of this study was to determine the behavior of pH, electrical conductivity (EC), cation exchange capacity (CEC) and carbon nitrogen ratio (C:N) in tree substrates base on burned rice husk and coconut fiber; and pH and CE in the drainage, in a soilless system to carnation crop cv. Delphi, with three recycling percentages and in different phenological developmental stages. The trial was carried out with three different substrates base on burned rice husk (BRH) and coconut fiber (CF). A randomized complete block experimental design in a split plot with nine treatments and three replications was used. The pH leachate tends to decrease towards the end of the crop, and in substrates this variable was kept constant over the period, although increases along with BRH percentages. The EC was significantly higher with 100% of recirculated leachate and in treatments with lower BRH content; unexpected, EC in substrates was significantly lower in treatments with more CF. On the other hand, CEC was significantly higher in substrates with higher CF percentages. However, contrary to literature, the C:N tended to show higher values in the substrate with higher BRH content."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="To optimize the management of fertigation in the soilless crops is essential to know the activity of chemical variables of the solution, and of the substrates. The aim of this study was to determine the behavior of pH, electrical conductivity (EC), cation exchange capacity (CEC) and carbon nitrogen ratio (C:N) in tree substrates base on burned rice husk and coconut fiber; and pH and CE in the drainage, in a soilless system to carnation crop cv. Delphi, with three recycling percentages and in different phenological developmental stages. The trial was carried out with three different substrates base on burned rice husk (BRH) and coconut fiber (CF). A randomized complete block experimental design in a split plot with nine treatments and three replications was used. The pH leachate tends to decrease towards the end of the crop, and in substrates this variable was kept constant over the period, although increases along with BRH percentages. The EC was significantly higher with 100% of recirculated leachate and in treatments with lower BRH content; unexpected, EC in substrates was significantly lower in treatments with more CF. On the other hand, CEC was significantly higher in substrates with higher CF percentages. However, contrary to literature, the C:N tended to show higher values in the substrate with higher BRH content."><meta property="og:image" content="/images/icon_hu2ec7a1f4f93b50b4fa452907fc8e9ad8_30297_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu2ec7a1f4f93b50b4fa452907fc8e9ad8_30297_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2015-06-01T00:00:00&#43;00:00">
@@ -283,7 +324,7 @@
     "name": "",
     "logo": {
       "@type": "ImageObject",
-      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+      "url": "/images/icon_hu2ec7a1f4f93b50b4fa452907fc8e9ad8_30297_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "To optimize the management of fertigation in the soilless crops is essential to know the activity of chemical variables of the solution, and of the substrates. The aim of this study was to determine the behavior of pH, electrical conductivity (EC), cation exchange capacity (CEC) and carbon nitrogen ratio (C:N) in tree substrates base on burned rice husk and coconut fiber; and pH and CE in the drainage, in a soilless system to carnation crop cv. Delphi, with three recycling percentages and in different phenological developmental stages. The trial was carried out with three different substrates base on burned rice husk (BRH) and coconut fiber (CF). A randomized complete block experimental design in a split plot with nine treatments and three replications was used. The pH leachate tends to decrease towards the end of the crop, and in substrates this variable was kept constant over the period, although increases along with BRH percentages. The EC was significantly higher with 100% of recirculated leachate and in treatments with lower BRH content; unexpected, EC in substrates was significantly lower in treatments with more CF. On the other hand, CEC was significantly higher in substrates with higher CF percentages. However, contrary to literature, the C:N tended to show higher values in the substrate with higher BRH content."
@@ -773,92 +814,6 @@
 
 
 
-<div class="share-box" aria-hidden="true">
-  <ul class="share">
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://twitter.com/intent/tweet?url=/publication/journal-article-3/&amp;text=Comportamiento%20de%20Variables%20Qu%c3%admicas%20en%20un%20Sistema%20de%20Cultivo%20sin%20Suelo%20para%20Clavel%20en%20la%20Sabana%20de%20Bogot%c3%a1." target="_blank" rel="noopener" class="share-btn-twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.facebook.com/sharer.php?u=/publication/journal-article-3/&amp;t=Comportamiento%20de%20Variables%20Qu%c3%admicas%20en%20un%20Sistema%20de%20Cultivo%20sin%20Suelo%20para%20Clavel%20en%20la%20Sabana%20de%20Bogot%c3%a1." target="_blank" rel="noopener" class="share-btn-facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="mailto:?subject=Comportamiento%20de%20Variables%20Qu%c3%admicas%20en%20un%20Sistema%20de%20Cultivo%20sin%20Suelo%20para%20Clavel%20en%20la%20Sabana%20de%20Bogot%c3%a1.&amp;body=/publication/journal-article-3/" target="_blank" rel="noopener" class="share-btn-email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/publication/journal-article-3/&amp;title=Comportamiento%20de%20Variables%20Qu%c3%admicas%20en%20un%20Sistema%20de%20Cultivo%20sin%20Suelo%20para%20Clavel%20en%20la%20Sabana%20de%20Bogot%c3%a1." target="_blank" rel="noopener" class="share-btn-linkedin">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://web.whatsapp.com/send?text=Comportamiento%20de%20Variables%20Qu%c3%admicas%20en%20un%20Sistema%20de%20Cultivo%20sin%20Suelo%20para%20Clavel%20en%20la%20Sabana%20de%20Bogot%c3%a1.%20/publication/journal-article-3/" target="_blank" rel="noopener" class="share-btn-whatsapp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://service.weibo.com/share/share.php?url=/publication/journal-article-3/&amp;title=Comportamiento%20de%20Variables%20Qu%c3%admicas%20en%20un%20Sistema%20de%20Cultivo%20sin%20Suelo%20para%20Clavel%20en%20la%20Sabana%20de%20Bogot%c3%a1." target="_blank" rel="noopener" class="share-btn-weibo">
-          <i class="fab fa-weibo"></i>
-        </a>
-      </li>
-    
-  </ul>
-</div>
-
-
-
 
 
 
@@ -930,8 +885,8 @@
       
     
     <li>
-      <a href="/#contact" >
-        <i class="fas fa-envelope"></i>
+      <a href="https://www.linkedin.com/in/afflorezr/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
       </a>
     </li>
   
@@ -962,7 +917,7 @@
       
     
     <li>
-      <a href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
+      <a href="https://scholar.google.co.uk/citations?hl=es&amp;user=4xqXZcIAAAAJ" target="_blank" rel="noopener">
         <i class="ai ai-google-scholar"></i>
       </a>
     </li>
@@ -1101,7 +1056,7 @@
   
   
   <div class="container">
-    <footer class="site-footer">
+    <footer class="site-footer" style="padding: 0rem 0;;margin: 0rem 0 0;width: 100%;">
   
   <p class="powered-by">
     
@@ -1114,10 +1069,6 @@
   </p>
   
 
-  <p class="powered-by">
-    
-  </p>
-
   
   
 
@@ -1127,7 +1078,7 @@
 
 
   <p class="powered-by">
-    Powered by the
+    © Andrés Flórez, <code>2020</code> &middot; Made with <i class="far fa-heart" ></i>, <a href="https://github.com/rbind/apreshill" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>, the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package and Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
     <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 
@@ -1142,6 +1093,7 @@
     
   </p>
 </footer>
+
 
   </div>
   

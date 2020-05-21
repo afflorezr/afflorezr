@@ -43,6 +43,9 @@
 
   
   
+  
+  <script src="/js/mathjax-config.js"></script>
+  
 
   
   
@@ -173,9 +176,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -191,7 +194,7 @@
   
   
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arapey:400,400i%7CKarla:400,700%7CRoboto+Mono&display=swap">
   
 
   
@@ -205,6 +208,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-27811677-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-27811677-3', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -216,8 +257,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu2ec7a1f4f93b50b4fa452907fc8e9ad8_30297_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu2ec7a1f4f93b50b4fa452907fc8e9ad8_30297_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="/publication-type/">
 
@@ -240,8 +281,8 @@
   <meta property="og:site_name" content="">
   <meta property="og:url" content="/publication-type/">
   <meta property="og:title" content="2 | ">
-  <meta property="og:description" content="Data Scientist."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Data Scientist."><meta property="og:image" content="/images/icon_hu2ec7a1f4f93b50b4fa452907fc8e9ad8_30297_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu2ec7a1f4f93b50b4fa452907fc8e9ad8_30297_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2015-09-01T00:00:00&#43;00:00">
   
@@ -687,7 +728,7 @@
   
   
   <div class="container">
-    <footer class="site-footer">
+    <footer class="site-footer" style="padding: 0rem 0;;margin: 0rem 0 0;width: 100%;">
   
   <p class="powered-by">
     
@@ -700,10 +741,6 @@
   </p>
   
 
-  <p class="powered-by">
-    
-  </p>
-
   
   
 
@@ -713,7 +750,7 @@
 
 
   <p class="powered-by">
-    Powered by the
+    © Andrés Flórez, <code>2020</code> &middot; Made with <i class="far fa-heart" ></i>, <a href="https://github.com/rbind/apreshill" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>, the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package and Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
     <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 
@@ -728,6 +765,7 @@
     
   </p>
 </footer>
+
 
   </div>
   
