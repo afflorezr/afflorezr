@@ -55,28 +55,6 @@
     </item>
     
     <item>
-      <title>Example Talk</title>
-      <link>/talk/example/</link>
-      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>/talk/example/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Writing technical content in Academic</title>
       <link>/post/writing-technical-content/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
@@ -311,6 +289,14 @@ A Markdown aside is useful for displaying notices, hints, or definitions to your
     </item>
     
     <item>
+      <title>VI Latin American Meeting on Bayesian Statistics (VI COBAL)</title>
+      <link>/talk/cobal/</link>
+      <pubDate>Wed, 19 Jun 2019 08:00:00 +0000</pubDate>
+      <guid>/talk/cobal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Display Jupyter Notebooks with Academic</title>
       <link>/post/jupyter/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
@@ -509,6 +495,14 @@ Three
       <guid>/terms/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>ISBA Conference</title>
+      <link>/talk/isba/</link>
+      <pubDate>Thu, 21 Jun 2018 08:00:00 +0000</pubDate>
+      <guid>/talk/isba/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -735,10 +729,26 @@ Figure 1: A fancy pie chart.
     </item>
     
     <item>
+      <title>The Use of R in Official Statistics - uRos2015</title>
+      <link>/talk/uros2015/</link>
+      <pubDate>Thu, 23 Apr 2015 08:00:00 +0000</pubDate>
+      <guid>/talk/uros2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Interactive R App for Carrying Out an Elicitation Process Applied to Prostate Cancer in Colombia.</title>
       <link>/publication/journal-article-2/</link>
       <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
       <guid>/publication/journal-article-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comportamiento de Variables Químicas en un Sistema de Cultivo sin Suelo para Clavel en la Sabana de Bogotá.</title>
+      <link>/publication/journal-article-3/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/journal-article-3/</guid>
       <description></description>
     </item>
     

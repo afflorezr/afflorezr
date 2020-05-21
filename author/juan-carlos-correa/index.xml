@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Juan Carlos Correa | </title>
+    <link>/author/juan-carlos-correa/</link>
+      <atom:link href="/author/juan-carlos-correa/index.xml" rel="self" type="application/rss+xml" />
+    <description>Juan Carlos Correa</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Juan Carlos Correa</title>
+      <link>/author/juan-carlos-correa/</link>
+    </image>
+    
+    <item>
+      <title>The Use of R in Official Statistics - uRos2015</title>
+      <link>/talk/uros2015/</link>
+      <pubDate>Thu, 23 Apr 2015 08:00:00 +0000</pubDate>
+      <guid>/talk/uros2015/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
